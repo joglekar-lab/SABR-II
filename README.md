@@ -14,6 +14,15 @@
 #python TCRgen_mouse.opt_v2.py imgt_tcr_mouse.nuc.fa "Mus musculus" "TRAV Allele" "TRAJ Allele" "CDR3Alpha" "TRBV Allele" "TRBJ Allele" "CDR3Beta" 1>TCR.opt.gb 2>TCR.opt.out.txt
 #The output is two files: TCR.opt.gb - full length TCR insert; TCR.opt.out.txt - summary and log of errors
 
+#SABR library oligo construction
+backtranslate_fast_noU_upto25.py
+Usage:
+python backtranslate_fast_noU_upto25.py epitope_list.csv
+Input file is a list of epitope names and epitopes in two columns.
+Output file is a list of epitopes + nucleotide seqeuences in two columns
+
+
+
 #SABR screen analysis
 #demultiplex_dual.py
 #De-multiplexes UDI indexes into individual indexes
